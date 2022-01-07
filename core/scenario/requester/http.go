@@ -228,8 +228,6 @@ func (h *HttpRequester) initRequestInstance() (err error) {
 	ua := header.Get("User-Agent")
 	if ua == "" {
 		ua = types.DdosifyUserAgent
-	} else {
-		ua += " " + types.DdosifyUserAgent
 	}
 	header.Set("User-Agent", ua)
 
